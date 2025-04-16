@@ -10,8 +10,8 @@ import numpy as np
 from wordcloud_generator import generate_wordcloud
 app = Flask(__name__)
 
-model = jb.load("sentiment_model.pkl")
-vectorizer = jb.load("tfidf_vectorizer.pkl")
+model = jb.load(r"D:\SEM PROJECTS\SEM 2\EOC-2 and MFC-2\Code\sentiment_model.pkl")
+vectorizer = jb.load(r"D:\SEM PROJECTS\SEM 2\EOC-2 and MFC-2\Code\tfidf_vectorizer.pkl")
 
 @app.route("/")
 def main():
